@@ -80,9 +80,10 @@ def drawAllObjects():
         thing.draw()
     solarSystem.sun.draw()
 
-    # Makes the dashboard appear only when mouse hovers above the area
-    if(dashboard.isOver(pygame.mouse.get_pos())):
-        dashboard.draw(screen)
+    # TODO: fix dashboard
+    # # Makes the dashboard appear only when mouse hovers above the area
+    # if(dashboard.isOver(pygame.mouse.get_pos())):
+    #     dashboard.draw(screen)
 
 
 def updateTimeAwareness():
@@ -119,8 +120,9 @@ while running:
     # Let the Solar System do whatever it needs to do
     solarSystem.exist()
 
-    # Animating and activating the dashboard
-    dashboard.animateAndActivate()
+    # TODO: fix dashboard
+    # # Animating and activating the dashboard
+    # dashboard.animateAndActivate()
 
     # Draw each object in their new position
     drawAllObjects()
